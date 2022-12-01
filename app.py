@@ -1,3 +1,5 @@
+# execute as sudo python3 app.py inside a tmux session
+
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
