@@ -1,5 +1,3 @@
-# execute as sudo python3 app.py inside a tmux session
-
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
@@ -62,7 +60,7 @@ def wa_sms_reply():
           response = requests.get("https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto4/" + date_str + "-CasosConfirmados-totalRegional.csv")  
 
 
-    bodystring = "El reporte COVID de hoy no está disponible aún. El último reporte disponible es el del día " + date.strftime("%A %d-%m-%Y") + ".\n\n" + reportecovid(date_str,datem1_str)
+       bodystring = "El reporte COVID de hoy no está disponible aún. El último reporte disponible es el del día " + date.strftime("%A %d-%m-%Y") + ".\n\n" + reportecovid(date_str,datem1_str)
 
 
     # Text response
